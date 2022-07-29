@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       },
       (error: any) => {
         if (error.status == 401)
-          this.toaster.error('usuário ou senha inválido');
+          this.toaster.error('Password or User invalid');
         else console.error(error);
       }
     );
