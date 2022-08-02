@@ -17,7 +17,7 @@
       <option value="PosDoutorado">Pós Doc</option>
     </select>
     <div *ngIf="f.titulo.errors && f.titulo.touched" class="invalid-feedback">
-      <div *ngIf="f.titulo.errors.required">Título é obrigatório</div>
+      <div *ngIf="f.titulo.errors.required">Title is mandatory</div>
     </div>
   </div>
   <div class="form-group col-sm-5">
@@ -25,7 +25,7 @@
     <input type="text" formControlName="primeiroNome" class="form-control"
     [ngClass]="{ 'is-invalid': f.primeiroNome.errors && f.primeiroNome.touched }" />
     <div *ngIf="f.primeiroNome.errors && f.primeiroNome.touched" class="invalid-feedback">
-      <div *ngIf="f.primeiroNome.errors.required">Primeiro nome é obrigatório</div>
+      <div *ngIf="f.primeiroNome.errors.required">First Name is mandatory</div>
     </div>
   </div>
   <div class="form-group col-sm-5">
@@ -33,7 +33,7 @@
     <input type="text" formControlName="ultimoNome" class="form-control"
     [ngClass]="{ 'is-invalid': f.ultimoNome.errors && f.ultimoNome.touched }" />
     <div *ngIf="f.ultimoNome.errors && f.ultimoNome.touched" class="invalid-feedback">
-      <div *ngIf="f.ultimoNome.errors.required">Último nome é obrigatório</div>
+      <div *ngIf="f.ultimoNome.errors.required">Last Name is mandatory</div>
     </div>
   </div>
 </div>
@@ -43,8 +43,8 @@
     <input type="text" formControlName="email" class="form-control"
     [ngClass]="{ 'is-invalid': f.email.errors && f.email.touched }" />
     <div *ngIf="f.email.errors && f.email.touched" class="invalid-feedback">
-      <div *ngIf="f.email.errors.required">e-mail é obrigatório</div>
-      <div *ngIf="f.email.errors.email">e-mail precisa ser um endereço válido.</div>
+      <div *ngIf="f.email.errors.required">email is mandatory</div>
+      <div *ngIf="f.email.errors.email">email precisa ser um endereço válido.</div>
     </div>
   </div>
   <div class="form-group col-sm-4">
@@ -52,7 +52,7 @@
     <input type="text" formControlName="phoneNumber" class="form-control"
     [ngClass]="{ 'is-invalid': f.phoneNumber.errors && f.phoneNumber.touched }" />
     <div *ngIf="f.phoneNumber.errors && f.phoneNumber.touched" class="invalid-feedback">
-      <div *ngIf="f.phoneNumber.errors.required">Telefone é obrigatório</div>
+      <div *ngIf="f.phoneNumber.errors.required">Phone number is mandatory</div>
     </div>
   </div>
   <div class="form-group col-sm">
@@ -64,7 +64,7 @@
     <option value="Palestrante">Palestrante</option>
   </select>
   <div *ngIf="f.funcao.errors && f.funcao.touched" class="invalid-feedback">
-    <div *ngIf="f.funcao.errors.required">função é obrigatório é obrigatório</div>
+    <div *ngIf="f.funcao.errors.required">Function is mandatory</div>
   </div>
 </div>
 <div class="form-group col-12">
@@ -72,7 +72,7 @@
   <input type="text" formControlName="descricao" class="form-control"
   [ngClass]="{ 'is-invalid': f.descricao.errors && f.descricao.touched }" />
   <div *ngIf="f.descricao.errors && f.descricao.touched" class="invalid-feedback">
-    <div *ngIf="f.descricao.errors.required">Descrição é obrigatório</div>
+    <div *ngIf="f.descricao.errors.required">Description is mandatory</div>
   </div>
 </div>
 </div>
@@ -86,8 +86,8 @@
     <input type="password" formControlName="password" class="form-control"
     [ngClass]="{ 'is-invalid': f.password.errors && f.password.touched }" />
     <div *ngIf="f.password.errors && f.password.touched" class="invalid-feedback">
-      <div *ngIf="f.password.errors.required">Senha é obrigatório</div>
-      <div *ngIf="f.password.errors.minlength">Senha precisa ter pelo menos 6 caracteres</div>
+      <div *ngIf="f.password.errors.required">Password is mandatory</div>
+      <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
     </div>
   </div>
   <div class="form-group col-sm">
@@ -95,8 +95,8 @@
     <input type="password" formControlName="confirmePassword" class="form-control"
     [ngClass]="{ 'is-invalid': f.confirmePassword.errors && f.confirmePassword.touched }" />
     <div *ngIf="f.confirmePassword.errors && f.confirmePassword.touched" class="invalid-feedback">
-      <div *ngIf="f.confirmePassword.errors.required">Confirmação de senha é Obrigatório</div>
-      <div *ngIf="f.confirmePassword.errors.mustMatch">Repedir a senha é obrigatório.</div>
+      <div *ngIf="f.confirmePassword.errors.required">Confirm Password is mandatory</div>
+      <div *ngIf="f.confirmePassword.errors.mustMatch">Repeat Password is mandatory.</div>
     </div>
   </div>
 </div>

@@ -17,7 +17,7 @@
           </div>
           <div class="card-body">
             <div class="h4 text-center mb-3">@{{usuario.userName}}</div>
-            <div class="h7 text-bold pb-1"><b>Nome:</b> {{usuario.primeiroNome + ' ' + usuario.ultimoNome}}</div>
+            <div class="h7 text-bold pb-1"><b>Name:</b> {{usuario.primeiroNome + ' ' + usuario.ultimoNome}}</div>
             <div class="h7">
               {{usuario.descricao}}
             </div>
@@ -27,11 +27,11 @@
               <div class="row">
                 <div class="col-6 text-center border-right">
                   <div class="h5">0</div>
-                  <div class="h6 text-muted">Meus Eventos Criados</div>
+                  <div class="h6 text-muted">My events created</div>
                 </div>
                 <div class="col-6 text-center">
                   <div class="h5">0</div>
-                  <div class="h6 text-muted">Eventos como {{ehPalestrante ? ' Palestrante' : 'Participante'}}</div>
+                  <div class="h6 text-muted">Events as {{ehPalestrante ? ' Palestrante' : 'Participante'}}</div>
                 </div>
               </div>
             </li>
@@ -50,20 +50,20 @@
           </tab>
           <tab *ngIf="ehPalestrante" class="border border-top-0 p-3">
             <ng-template tabHeading>
-              <i class="fa fa-user mr-2"></i><span>Palestrante</span>
+              <i class="fa fa-user mr-2"></i><span>Speaker</span>
             </ng-template>
             <div class="form-group">
-              <h3 class="border-bottom">Palestrante</h3>
+              <h3 class="border-bottom">Speaker</h3>
             </div>
 
             <app-palestrante-detalhe></app-palestrante-detalhe>
           </tab>
           <tab *ngIf="ehPalestrante" class="border border-top-0 p-3">
             <ng-template tabHeading>
-              <i class="fa fa-share-square mr-2"></i><span>Rede Social</span>
+              <i class="fa fa-share-square mr-2"></i><span>Social network</span>
             </ng-template>
             <div class="form-group">
-              <h3 class="border-bottom">Rede Social</h3>
+              <h3 class="border-bottom">Social network</h3>
             </div>
 
             <app-redesSociais></app-redesSociais>

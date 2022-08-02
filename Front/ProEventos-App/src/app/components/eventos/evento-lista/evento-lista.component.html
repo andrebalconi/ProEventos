@@ -5,7 +5,7 @@
     <div class="flex-fill pr-3">
       <div class="input-group mb-2">
         <div class="input-group-prepend">
-          <div class="input-group-text">Filtro: </div>
+          <div class="input-group-text">Filter: </div>
         </div>
         <input
         type="text"
@@ -18,7 +18,7 @@
     <div>
       <a class="d-flex btn btn-outline-primary" routerLink="/eventos/detalhe">
         <i class="fa fa-plus-circle my-1"></i>
-        <b class="ml-1 d-none d-sm-block">Novo</b>
+        <b class="ml-1 d-none d-sm-block">New</b>
       </a>
     </div>
     </div>
@@ -34,12 +34,12 @@
         </button>
       </th>
       <th>#</th>
-      <th>Tema</th>
+      <th>Theme</th>
       <th class="d-none d-md-table-cell">Local</th>
-      <th>Data</th>
-      <th class="d-none d-md-table-cell">Qtd Pessoas</th>
-      <th class="d-none d-md-table-cell">Lote</th>
-      <th>Opções</th>
+      <th>Date</th>
+      <th class="d-none d-md-table-cell">Qtd People</th>
+      <th class="d-none d-md-table-cell">Lot</th>
+      <th>Option</th>
     </tr>
   </thead>
   <tbody *ngIf="eventos && eventos.length">
@@ -68,7 +68,7 @@
   <tfoot *ngIf="!eventos.length">
     <tr>
       <td colspan="8" class="text-center">
-        <h4>Nenhum evento encontrado!</h4>
+        <h4>No events found!</h4>
       </td>
     </tr>
   </tfoot>
@@ -100,8 +100,8 @@
 
 <ng-template #template>
   <div class="modal-body text-center">
-    <p>Tem certeza que quer deletar o Evento de Código {{this.eventoId}}?</p>
-    <button type="button" class="btn btn-default" (click)="confirm()">Sim</button>
-    <button type="button" class="btn btn-primary" (click)="decline()">Não</button>
+    <p>Are you sure you want to delete the Code Event {{this.eventoId}}?</p>
+    <button type="button" class="btn btn-default" (click)="confirm()">Yes</button>
+    <button type="button" class="btn btn-primary" (click)="decline()">No</button>
   </div>
 </ng-template>
